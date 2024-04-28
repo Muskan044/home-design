@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-image: url('./bg-pic.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header h2 {
+    color: #fff;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 15px;
+    font-size: 10px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #05302b;
+    border-width: 5px;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;  
+}
+
+span {
+    background: rgb(118, 199, 195);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    transition: .5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+    color: teal;
+}
